@@ -1,0 +1,10 @@
+
+def solution(A):
+    positive_integers = set()
+    for num in A:
+        if num > 0:
+            positive_integers.add(num)
+    missing_integer = 1
+    while missing_integer in positive_integers:
+        missing_integer += 1
+    return missing_integer
